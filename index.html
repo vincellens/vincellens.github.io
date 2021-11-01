@@ -50,16 +50,12 @@
 	  	}
 	  	.cc{
 	  		position: fixed;
-	  		color: #FFFFFF;
+	  		color: #FFFFFF30;
 	  		z-index: 10;
 	  		top: 0;
 	  		right: 0;
 	  		font-size: 10pt;
 	  		font-weight: lighter;
-	  		background: #00000030;
-	  		padding: 5px 2px;
-	  		padding-left:10px;
-	  		border-radius: 20px 0px 0px 20px;
 	  	}
 	  	img{
 			width: 100vw;
@@ -493,13 +489,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  	<script type="text/javascript">
 	  		/*
-
 			referensi
-
 	  		https://www.w3schools.com/howto/howto_js_draggable.asp
 	  		https://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable
 	  		http://stackoverflow.com/questions/8960193/how-to-make-html-element-resizable-using-pure-javascript/33523184
-
 	  		*/
 	  		namaku=localStorage.getItem("nama");
 			blur="true"; 
@@ -509,7 +502,7 @@
 	  		function init(){
 	  			startTime();
 	  			stopOpening();
-	  			add='<div class="cc">copyright VINCELLENS @2021</div>';
+	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
@@ -867,7 +860,7 @@
 			}
 			function mytanggal(){
 				var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'];
 				var d = new Date();
 				var dayName = hari[d.getDay()];
 				var monthName = bulan[d.getMonth()];
