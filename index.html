@@ -488,12 +488,7 @@
 		<span style="position: absolute; text-align: center; line-height: 100vh; width: 100vw; z-index:-10;">jangan dijual bos</span>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  	<script type="text/javascript">
-	  		/*
-			referensi
-	  		https://www.w3schools.com/howto/howto_js_draggable.asp
-	  		https://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable
-	  		http://stackoverflow.com/questions/8960193/how-to-make-html-element-resizable-using-pure-javascript/33523184
-	  		*/
+	
 	  		namaku=localStorage.getItem("nama");
 			blur="true"; 
 			$(window).on('load',function(){
@@ -502,7 +497,7 @@
 	  		function init(){
 	  			startTime();
 	  			stopOpening();
-	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
+	  			add='<div class="cc">Copyright 2021 by SAID RAHMAN AZIZI @vincellens Modified</div>';
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
@@ -807,7 +802,7 @@
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
 				}
-				if(window.btoa($('.cc').text())!='Y29weXJpZ2h0IEFuZGlrYSBTdWphbmFkaSBAMjAyMA=='){
+				if(window.btoa($('.cc').text())!='Q29weXJpZ2h0IDIwMjEgYnkgU0FJRCBSQUhNQU4gQVpJWkkgQHZpbmNlbGxlbnMgTW9kaWZpZWQ='){
 					if(jalan) $('.container').remove();
 					if(jalan) $('img').remove();
 					jalan=true;
@@ -860,7 +855,7 @@
 			}
 			function mytanggal(){
 				var hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'];
+				var bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 				var d = new Date();
 				var dayName = hari[d.getDay()];
 				var monthName = bulan[d.getMonth()];
