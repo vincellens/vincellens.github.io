@@ -279,12 +279,12 @@
 	  	}
 	  	.jam{
 	  		position: relative;
-	  		font-size: 100px;
+	  		font-size: 180px;
 	  		font-weight: 300;
 	  	}
 	  	.tanggal{
 	  		position: relative;
-	  		font-size: 20px;
+	  		font-size: 25px;
 	  		margin-top: 15px;
 	  	}
 	  	.ucapan{
@@ -292,11 +292,11 @@
 	  		color: #000000;
 	  		font-size: 20px;
 	  		margin-top: 50px;
-	  		background: #EAEAEA90;
+	  		background: #ffffff5e;
 	  		left: calc(50% - 220px - 20px);
 	  		width: 440px;
-	  		padding: 30px 20px;
-	  		border-radius: 25px;
+	  		padding: 15px 20px;
+	  		border-radius: 15px;
 	  		transition: all ease 0.3s;
 	  	}
 	  	.ucapan:active{
@@ -328,12 +328,12 @@
 	  	}
 	  	.myakun{
 	  		color: #FFFFFF;
-	  		background: #00000080;
+	  		background: #00000030;
 	  		transform: translateY(0px);
-	  		width: 200px;
+	  		width: 180px;
 	  		height: 30px;
 	  		line-height: 30px;
-	  		border-radius: 5px;
+	  		border-radius: 7px;
 	  		display: inline-block;
 	  		margin: 3px 2px;
 	  		transition: background ease 0.3s;
@@ -384,11 +384,11 @@
 	  		position: fixed;
 	  		bottom: 0;
 	  		width: 100px;
-	  		height: 70px;
-	  		line-height: 70px;
+	  		height: 50px;
+	  		line-height: 50px;
 	  		background: #FFFFFF10;
 	  		margin: 10px;
-	  		border-radius: 20px;
+	  		border-radius: 10px;
 	  		cursor: pointer;
 	  		transition: transform ease 0.3s;
 	  		backdrop-filter: blur(3px);
@@ -436,8 +436,8 @@
 				<div class="myakun" onclick="kembali()">Kembali</div>
 				<div class="myakun" onclick="reverse()">Reset</div>
 				<div class="contjam">
-					<div class="jam">-:-</div>
-					<div class="tanggal">-</div>
+					<div class="jam" style="letter-spacing: 0.06em;">-:-</div>
+					<div class="tanggal" style="letter-spacing: 0.095em;">-</div>
 					<div class="ucapan myoverlay" onclick="carigoogle()"><span id="spannama2"></span></div>	
 				</div>
 				<div class="shortcut kanan" onclick="toggleFullscreen()">fullscreen</div>
@@ -786,7 +786,7 @@
 				h = checkTime(h);
 				m = checkTime(m);
 				s = checkTime(s);
-				document.querySelector('.jam').innerHTML =	h + ":" + m;
+				document.querySelector('.jam').innerHTML =	h + ":" + m + ":" + s;
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
