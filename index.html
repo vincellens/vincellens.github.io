@@ -859,7 +859,7 @@
 				var d = new Date();
 				var dayName = hari[d.getDay()];
 				var monthName = bulan[d.getMonth()];
-				tanggal=(dayName+', '+d.getDate()+' '+monthName);
+				tanggal=(dayName+', '+d.getDate()+' '+monthName+' '+d.getFullYear());
 				$('.tanggal').text(tanggal);
 			}
 			function wpblur(){
